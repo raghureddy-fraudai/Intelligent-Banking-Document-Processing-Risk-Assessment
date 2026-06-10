@@ -98,32 +98,6 @@ Transaction 4: {'date': '10-12-2024', 'description': '(Puat1181281.44/19*30:05/1
 Transaction 5: {'date': '08-01-2025', 'description': 'AS LE AEDT', 'transaction_type': 'DEBIT', 'amount': 19.0, 'balance': 0.29}
 ```
 
-### Additional Sample Outputs
-
-#### 1. Categorized Transactions with Refined Rules
-
-![Categorized Transactions](https://github.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/assets/images/screenshot1.png)
-
-This screenshot demonstrates the transaction categorization engine that classifies banking transactions into predefined categories (Miscellaneous, Transfer, etc.) based on transaction descriptions and refined rule-based logic.
-
-#### 2. Direct Workflow Execution Results
-
-![Direct Workflow Execution](https://github.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/assets/images/screenshot2.png)
-
-Shows the direct workflow execution output with complete risk assessment summary including customer information, risk flags count, risk scores, and recommended actions for further review.
-
-#### 3. Downstream Server Ingestion Results - Full Workflow
-
-![Downstream Server Ingestion](https://github.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/assets/images/screenshot3.png)
-
-Displays the complete REST API response from the downstream server showing successful document processing with HTTP 200 OK status and comprehensive risk analysis output in JSON format.
-
-#### 4. Complete Risk Assessment Summary
-
-![Risk Assessment Summary](https://github.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/assets/images/screenshot4.png)
-
-Final output demonstrating the complete risk assessment pipeline with detailed risk summary, executive summary, risk flag counts, and audit trail information for compliance and monitoring purposes.
-
 ## Business Applications
 
 * Banking Automation
