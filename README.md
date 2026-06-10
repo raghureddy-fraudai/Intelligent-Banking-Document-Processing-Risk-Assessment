@@ -2,7 +2,7 @@
 
 ## Overview
 
-BankDocAI is an AI-powered banking document processing platform that automates OCR extraction, transaction intelligence, risk assessment, sentiment analysis, and compliance validation from bank statements and financial documents.
+BankDocAI is an AI-powered banking document processing platform that automates OCR extraction, transaction intelligence, risk assessment, sentiment analysis, and compliance validation from bank statements. The system leverages advanced NLP and ML techniques to provide comprehensive financial document intelligence with real-time risk detection.
 
 ## Features
 
@@ -100,11 +100,29 @@ Transaction 5: {'date': '08-01-2025', 'description': 'AS LE AEDT', 'transaction_
 
 ### Additional Sample Outputs
 
-* Customer Information Extraction
-* Risk Flags
-* Risk Score Calculation
-* Executive Summary
-* Audit Trail
+#### 1. Categorized Transactions with Refined Rules
+
+![Categorized Transactions](https://github.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/assets/images/screenshot1.png)
+
+This screenshot demonstrates the transaction categorization engine that classifies banking transactions into predefined categories (Miscellaneous, Transfer, etc.) based on transaction descriptions and refined rule-based logic.
+
+#### 2. Direct Workflow Execution Results
+
+![Direct Workflow Execution](https://github.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/assets/images/screenshot2.png)
+
+Shows the direct workflow execution output with complete risk assessment summary including customer information, risk flags count, risk scores, and recommended actions for further review.
+
+#### 3. Downstream Server Ingestion Results - Full Workflow
+
+![Downstream Server Ingestion](https://github.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/assets/images/screenshot3.png)
+
+Displays the complete REST API response from the downstream server showing successful document processing with HTTP 200 OK status and comprehensive risk analysis output in JSON format.
+
+#### 4. Complete Risk Assessment Summary
+
+![Risk Assessment Summary](https://github.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/assets/images/screenshot4.png)
+
+Final output demonstrating the complete risk assessment pipeline with detailed risk summary, executive summary, risk flag counts, and audit trail information for compliance and monitoring purposes.
 
 ## Business Applications
 
