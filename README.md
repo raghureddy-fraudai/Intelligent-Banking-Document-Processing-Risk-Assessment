@@ -74,15 +74,15 @@ K --> L[JSON Response]
 
 ### Workflow Progress & API Response
 
-The following screenshot demonstrates the complete document processing pipeline with workflow stages and the generated risk assessment JSON response:
+The following demonstrates the complete document processing pipeline with workflow stages and the generated risk assessment JSON response:
 
 ```
-[Workflow Progress] Stage: DOCUMENT_RECEIVED, Status: SUCCESS, Details: BANK_STATEMENT_2.pdf
+[Workflow Progress] Stage: DOCUMENT_RECEIVED, Status: SUCCESS, Details: /content/BANK_STATEMENT_2.pdf
 Successfully extracted text from /content/BANK_STATEMENT_2.pdf.
 [Workflow Progress] Stage: AI_UNDERSTANDING, Status: SUCCESS, Details:
 [Workflow Progress] Stage: VALIDATION, Status: SUCCESS, Details: Schema validation passed
 [Workflow Progress] Stage: SUMMARY_GENERATION, Status: SUCCESS, Details: REVIEW_RECOMMENDED
-INFO:     127.0.0.1:49988 - "POST /process-document HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49288 - "POST /process-document HTTP/1.1" 200 OK
 
 --- DOWNSTREAM SERVER INGESTION RESULTS ---
 {
