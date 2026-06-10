@@ -102,6 +102,10 @@ INFO:     127.0.0.1:49288 - "POST /process-document HTTP/1.1" 200 OK
 }
 ```
 
+### Direct Workflow Execution
+
+![Direct Workflow Execution](assets/workflow-execution-screenshot.png)
+
 ### OCR Extraction & Transaction Intelligence
 
 Processing bank statement using the real OCR engine and successfully extracting text from PDF documents:
