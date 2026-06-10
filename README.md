@@ -2,7 +2,7 @@
 
 ## Overview
 
-BankDocAI is an AI-powered banking document processing platform that automates OCR extraction, transaction intelligence, risk assessment, sentiment analysis, and compliance validation from bank statements. The system transforms unstructured financial documents into structured, actionable insights through an enterprise-grade workflow.
+BankDocAI is an AI-powered banking document processing platform that automates OCR extraction, transaction intelligence, risk assessment, sentiment analysis, and compliance validation from bank statements and financial documents.
 
 ## Features
 
@@ -72,8 +72,35 @@ K --> L[JSON Response]
 
 ## Sample Output
 
+### OCR Extraction & Transaction Intelligence
+
+Processing bank statement using the real OCR engine and successfully extracting text from PDF documents:
+
+```
+Processing bank statement using the real OCR engine...
+Successfully extracted text from /content/BANK_STATEMENT_2.pdf.
+
+--- Extracted Header Entities ---
+account_number: 81198100000007
+ifsc: BARB0VJMDNG
+bank_name: World Bank of Baroda
+customer_name: CH JANAKI RAGHU RAMI REDDY MADHAVANAGAR KURNOOL
+pan: None
+mobile: None
+email: None
+statement_period: 01-12-2024 to 31-01-2025
+
+--- Extracted Transactions ---
+Transaction 1: {'date': '03-12-2024', 'description': 'Opening Balance', 'transaction_type': 'UNKNOWN', 'amount': 0.0, 'balance': 8.35}
+Transaction 2: {'date': '05-12-2024', 'description': 'JPN A TOSOTOSTSSIA ASS D/EHSSOTSHEB8S 1DP4', 'transaction_type': 'CREDIT', 'amount': 1200.0, 'balance': 1200.35}
+Transaction 3: {'date': '05-12-2024', 'description': 'UR SERA UA SERIA', 'transaction_type': 'DEBIT', 'amount': 150.0, 'balance': 950.35}
+Transaction 4: {'date': '10-12-2024', 'description': '(Puat1181281.44/19*30:05/1Pubharatpe. 200093587', 'transaction_type': 'DEBIT', 'amount': 10.0, 'balance': 19.92}
+Transaction 5: {'date': '08-01-2025', 'description': 'AS LE AEDT', 'transaction_type': 'DEBIT', 'amount': 19.0, 'balance': 0.29}
+```
+
+### Additional Sample Outputs
+
 * Customer Information Extraction
-* Transaction Intelligence
 * Risk Flags
 * Risk Score Calculation
 * Executive Summary
@@ -96,4 +123,3 @@ K --> L[JSON Response]
 * Machine Learning Fraud Detection
 * Dashboard & Analytics Portal
 * Cloud Deployment using Docker & Kubernetes
-
