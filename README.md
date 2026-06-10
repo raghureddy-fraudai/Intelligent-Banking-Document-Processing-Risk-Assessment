@@ -104,7 +104,7 @@ INFO:     127.0.0.1:49288 - "POST /process-document HTTP/1.1" 200 OK
 
 ### Direct Workflow Execution
 
-![Direct Workflow Execution](assets/workflow-execution-screenshot.png)
+![Direct Workflow Execution](https://raw.githubusercontent.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/refs/heads/main/assets/Screenshot%202026-06-10%20111547.png)
 
 ### OCR Extraction & Transaction Intelligence
 
