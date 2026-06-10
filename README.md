@@ -2,7 +2,7 @@
 
 ## Overview
 
-BankDocAI is an AI-powered banking document processing platform that automates OCR extraction, transaction intelligence, risk assessment, sentiment analysis, and compliance validation from bank statements. The system leverages advanced NLP and ML techniques to provide comprehensive financial document intelligence with real-time risk detection.
+BankDocAI is an AI-powered banking document processing platform that automates OCR extraction, transaction intelligence, risk assessment, sentiment analysis, and compliance validation from bank statements.
 
 ## Features
 
@@ -71,6 +71,36 @@ K --> L[JSON Response]
 ```
 
 ## Sample Output
+
+### Workflow Progress & API Response
+
+The following screenshot demonstrates the complete document processing pipeline with workflow stages and the generated risk assessment JSON response:
+
+```
+[Workflow Progress] Stage: DOCUMENT_RECEIVED, Status: SUCCESS, Details: BANK_STATEMENT_2.pdf
+Successfully extracted text from /content/BANK_STATEMENT_2.pdf.
+[Workflow Progress] Stage: AI_UNDERSTANDING, Status: SUCCESS, Details:
+[Workflow Progress] Stage: VALIDATION, Status: SUCCESS, Details: Schema validation passed
+[Workflow Progress] Stage: SUMMARY_GENERATION, Status: SUCCESS, Details: REVIEW_RECOMMENDED
+INFO:     127.0.0.1:49988 - "POST /process-document HTTP/1.1" 200 OK
+
+--- DOWNSTREAM SERVER INGESTION RESULTS ---
+{
+  "status": "SUCCESS",
+  "risk_summary": {
+    "customer_name": "CH JANAKI RAGHU RAMI REDDY MADHAVANAGAR KURNOOL",
+    "bank_name": "World Bank of Baroda",
+    "total_transactions": 24,
+    "high_risk_flags": 1,
+    "medium_risk_flags": 0,
+    "risk_score": 65,
+    "recommended_action": "REVIEW_RECOMMENDED",
+    "executive_summary": "CH JANAKI RAGHU RAMI REDDY MADHAVANAGAR KURNOOL has 24 items. System tracked 1 high-risk anomalies. Action: REVIEW_RECOMMENDED."
+  },
+  "risk_flags_count": 1,
+  "audit_log_count": 4
+}
+```
 
 ### OCR Extraction & Transaction Intelligence
 
