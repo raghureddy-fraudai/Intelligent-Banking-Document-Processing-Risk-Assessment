@@ -41,6 +41,35 @@ BankDocAI is an AI-powered banking document processing platform that automates O
 9. Audit Logging
 10. API Response Generation
 
+## Architecture Diagram
+
+```mermaid
+flowchart TD
+
+A[Bank Statement PDF/Image]
+--> B[OCR Engine - Tesseract OCR]
+
+B --> C[Entity Extraction Layer]
+B --> D[Transaction Extraction Layer]
+
+C --> E[Pydantic Validation]
+D --> E
+
+E --> F[Transaction Categorization]
+
+F --> G[Sentiment Analysis]
+
+G --> H[Risk Detection Engine]
+
+H --> I[Risk Scoring & Executive Summary]
+
+I --> J[Audit Logging]
+
+J --> K[FastAPI REST API]
+
+K --> L[JSON Response]
+```
+
 ## Sample Output
 
 * Customer Information Extraction
