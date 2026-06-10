@@ -106,6 +106,12 @@ INFO:     127.0.0.1:49288 - "POST /process-document HTTP/1.1" 200 OK
 
 ![Direct Workflow Execution](https://raw.githubusercontent.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/refs/heads/main/assets/Screenshot%202026-06-10%20111547.png)
 
+### Categorized Transactions (Refined Rules)
+
+Transaction categorization using refined rule-based engine with intelligent classification of all extracted transactions:
+
+![Categorized Transactions](https://raw.githubusercontent.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/refs/heads/main/assets/Screenshot%202026-06-10%20Categorized%20Transactions.png)
+
 ### OCR Extraction & Transaction Intelligence
 
 Processing bank statement using the real OCR engine and successfully extracting text from PDF documents:
