@@ -112,6 +112,12 @@ Transaction categorization using refined rule-based engine with intelligent clas
 
 ![Categorized Transactions](https://raw.githubusercontent.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/refs/heads/main/assets/Screenshot%202026-06-10%20111601.png)
 
+### Transactions with Sentiment Analysis
+
+Comprehensive transaction analysis with sentiment classification for each transaction extracted from the bank statement:
+
+![Transactions with Sentiment Analysis](https://raw.githubusercontent.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/refs/heads/main/assets/Screenshot%202026-06-10%20Sentiment%20Analysis.png)
+
 ### OCR Extraction & Transaction Intelligence
 
 Processing bank statement using the real OCR engine and successfully extracting text from PDF documents:
