@@ -72,6 +72,36 @@ K --> L[JSON Response]
 
 ## Sample Output
 
+### OCR Extraction & Transaction Intelligence
+
+Processing bank statement using the real OCR engine and successfully extracting text from PDF documents:
+
+```
+Processing bank statement using the real OCR engine...
+Successfully extracted text from /content/BANK_STATEMENT_2.pdf.
+
+--- Extracted Header Entities ---
+account_number: 81198100000007
+ifsc: BARB0VJMDNG
+bank_name: World Bank of Baroda
+customer_name: CH JANAKI RAGHU RAMI REDDY MADHAVANAGAR KURNOOL
+pan: None
+mobile: None
+email: None
+statement_period: 01-12-2024 to 31-01-2025
+
+--- Extracted Transactions ---
+Transaction 1: {'date': '03-12-2024', 'description': 'Opening Balance', 'transaction_type': 'UNKNOWN', 'amount': 0.0, 'balance': 8.35}
+Transaction 2: {'date': '05-12-2024', 'description': 'JPN A TOSOTOSTSSIA ASS D/EHSSOTSHEB8S 1DP4', 'transaction_type': 'CREDIT', 'amount': 1200.0, 'balance': 1200.35}
+Transaction 3: {'date': '05-12-2024', 'description': 'UR SERA UA SERIA', 'transaction_type': 'DEBIT', 'amount': 150.0, 'balance': 950.35}
+Transaction 4: {'date': '10-12-2024', 'description': '(Puat1181281.44/19*30:05/1Pubharatpe. 200093587', 'transaction_type': 'DEBIT', 'amount': 10.0, 'balance': 19.92}
+Transaction 5: {'date': '08-01-2025', 'description': 'AS LE AEDT', 'transaction_type': 'DEBIT', 'amount': 19.0, 'balance': 0.29}
+```
+
+### Direct Workflow Execution
+
+![Direct Workflow Execution](https://raw.githubusercontent.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/refs/heads/main/assets/Screenshot%202026-06-10%20111547.png)
+
 ### Workflow Progress & API Response
 
 The following demonstrates the complete document processing pipeline with workflow stages and the generated risk assessment JSON response:
@@ -102,15 +132,12 @@ INFO:     127.0.0.1:49288 - "POST /process-document HTTP/1.1" 200 OK
 }
 ```
 
-### Direct Workflow Execution
-
-![Direct Workflow Execution](https://raw.githubusercontent.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/refs/heads/main/assets/Screenshot%202026-06-10%20111547.png)
-
 ### Categorized Transactions (Refined Rules)
 
 Transaction categorization using refined rule-based engine with intelligent classification of all extracted transactions:
 
 ![Categorized Transactions](https://raw.githubusercontent.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/refs/heads/main/assets/Screenshot%202026-06-10%20111601.png)
+
 
 ### Transactions with Sentiment Analysis
 
@@ -118,31 +145,6 @@ Comprehensive transaction analysis with sentiment classification for each transa
 
 ![Transactions with Sentiment Analysis](https://raw.githubusercontent.com/raghureddy-fraudai/Intelligent-Banking-Document-Processing-Risk-Assessment/refs/heads/main/assets/Screenshot%202026-06-10%20111613.png)
 
-### OCR Extraction & Transaction Intelligence
-
-Processing bank statement using the real OCR engine and successfully extracting text from PDF documents:
-
-```
-Processing bank statement using the real OCR engine...
-Successfully extracted text from /content/BANK_STATEMENT_2.pdf.
-
---- Extracted Header Entities ---
-account_number: 81198100000007
-ifsc: BARB0VJMDNG
-bank_name: World Bank of Baroda
-customer_name: CH JANAKI RAGHU RAMI REDDY MADHAVANAGAR KURNOOL
-pan: None
-mobile: None
-email: None
-statement_period: 01-12-2024 to 31-01-2025
-
---- Extracted Transactions ---
-Transaction 1: {'date': '03-12-2024', 'description': 'Opening Balance', 'transaction_type': 'UNKNOWN', 'amount': 0.0, 'balance': 8.35}
-Transaction 2: {'date': '05-12-2024', 'description': 'JPN A TOSOTOSTSSIA ASS D/EHSSOTSHEB8S 1DP4', 'transaction_type': 'CREDIT', 'amount': 1200.0, 'balance': 1200.35}
-Transaction 3: {'date': '05-12-2024', 'description': 'UR SERA UA SERIA', 'transaction_type': 'DEBIT', 'amount': 150.0, 'balance': 950.35}
-Transaction 4: {'date': '10-12-2024', 'description': '(Puat1181281.44/19*30:05/1Pubharatpe. 200093587', 'transaction_type': 'DEBIT', 'amount': 10.0, 'balance': 19.92}
-Transaction 5: {'date': '08-01-2025', 'description': 'AS LE AEDT', 'transaction_type': 'DEBIT', 'amount': 19.0, 'balance': 0.29}
-```
 
 ## Business Applications
 
