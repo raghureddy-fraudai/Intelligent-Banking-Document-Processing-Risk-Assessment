@@ -1,5 +1,4 @@
 # BankDocAI - Enterprise Banking Document Intelligence Platform
-
 ## Overview
 
 BankDocAI is an AI-powered banking document processing platform that automates OCR extraction, transaction intelligence, risk assessment, sentiment analysis, and compliance validation from bank statements.
